@@ -60,7 +60,7 @@ Un programa está compuesto por unas determinadas lineas de código, las lineas 
 
 ​La secuencia de valores que vaya teniendo el Contador de programa podrán apuntar a instrucciones de diferentes procesos.​
 
-![memoria](/images/memoria.png)
+![memoria](images/memoria.png)
 
 El procesador ejecutará el código perteneciente a un módulo del sistema operativo, llamado Distribuidor (en inglés, Dispatcher), cada vez que un proceso haya consumido su tiempo (medido en ciclos de instrucción) o haya solicitado algún servicio por el que deba esperar (p. ej. una operación de E/S).​
 
@@ -71,7 +71,7 @@ Podemos definir un ciclo de instrucción como el tiempo que emplea el procesador
 
 > Por este motivo, también suele llamarse ciclo de fetch-and-execute o fetch-decode-execute.​
 
-![Ciclo de instrucción](/images/Ciclo.png)
+![Ciclo de instrucción](images/Ciclo.png)
 
 ### 2.3 Estados de un proceso
 
@@ -83,7 +83,7 @@ El procesador ejecutará el código perteneciente al distribuidor cada vez que u
 * **Bloqueado:** Está a la espera de que suceda un evento.​
 * **Terminado:** Finaliza su ejecución. Muere.​
 
-![Estados de un proceso](/images/estados.png)
+![Estados de un proceso](images/estados.png)
 
 ## 3\. Planificador de procesos
 
