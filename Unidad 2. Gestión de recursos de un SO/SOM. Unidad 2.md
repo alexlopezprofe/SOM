@@ -46,7 +46,7 @@ Los hilos o hebras (del inglés thread) representan un método software para mej
 
 ​Los sistemas operativos modernos están preparados para crear más de un hilo de ejecución en un proceso. Con las tecnologías multi-core (multiprocesador) esto se hace algo necesario para poder sacar mayor provecho al recurso de procesamiento. En los procesadores que tienen, por ejemplo 6 núcleos y 12 hilos, serán capaces de dividir los procesos en 12 tareas distintas, en lugar de solamente 6.​
 
-![Hilos](/images/Hilos.png)
+![Hilos](images/Hilos.png)
 
 ### 2.2 Ejecución de un proceso
 
