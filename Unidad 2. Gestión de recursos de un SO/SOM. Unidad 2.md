@@ -83,7 +83,7 @@ El procesador ejecutará el código perteneciente al distribuidor cada vez que u
 * **Bloqueado:** Está a la espera de que suceda un evento.​
 * **Terminado:** Finaliza su ejecución. Muere.​
 
-![Estados de un proceso](images/estados.png)
+![Estados de un proceso][def]
 
 ## 3\. Planificador de procesos
 
@@ -107,3 +107,5 @@ Política de Planificación No Apropiativa. Un proceso en ejecución no se inter
 * **RR​**
 * **SRT​**
 * **SRTF**
+
+[def]: images/estados.png
