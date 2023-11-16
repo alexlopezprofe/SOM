@@ -2,9 +2,16 @@
 
 # Concepto de virtualización y máquinas virtuales
 
-La **virtualización** es una tecnología que permite la creación de entornos virtuales o simulados dentro de un sistema informático físico. Este concepto se utiliza para optimizar recursos, mejorar la eficiencia y facilitar la administración de sistemas. Uno de los aspectos más destacados de la virtualización es la creación de **máquinas virtuales** (VM, por sus siglas en inglés).
+La **virtualización** es una tecnología que permite la creación de entornos virtuales o simulados dentro de un sistema informático físico. Este concepto se utiliza para optimizar recursos, mejorar la eficiencia y facilitar la administración de sistemas. El objetivo de la virtualización es la creación de **máquinas virtuales** (VM, por sus siglas en inglés).
 
-Las máquinas virtuales son instancias virtuales de sistemas operativos que se ejecutan sobre un **hipervisor** o **monitor de máquinas virtuales** o **host** (anfitrión), Mientras que podemos referirnos a las máquinas virtuales como huéspedes o sistemas invitados (**guest**).
+Las máquinas virtuales son instancias virtuales de sistemas operativos que se ejecutan sobre un equipo **host** o anfitrion. Un **hipervisor**, conocido también como monitor de máquinas virtuales, es un proceso que crea y ejecuta máquinas virtuales. Un hipervisor permite que un ordenador host preste soporte a varias máquinas virtuales invitadas mediante el uso compartido virtual de sus recursos, como la memoria y el procesamiento.
+
+En general, hay dos tipos de hipervisores.
+
+- Los hipervisores de tipo 1, denominados «hipervisores **bare metal**», se ejecutan directamente en el hardware del host.
+- Los hipervisores de tipo 2, denominados «alojados», se ejecutan como una capa de software sobre un sistema operativo, como otros programas informáticos. 
+
+Mientras que podemos referirnos a las máquinas virtuales como huéspedes o sistemas invitados (**guest**).
 
 ![image](https://github.com/alexlopezprofe/SOM/assets/148449360/00359333-8520-429d-a21d-5b0e2964e305)
 
@@ -43,4 +50,28 @@ Esto permite olvidarnos de los requisitos que tienen los servidores de virtualiz
 Además dispondremos de flexibilidad a la hora de decidir el equipamiento. Es decir, contratamos la potencia a medida que la necesitamos, pudiendo aumentarla y disminuirla según los requerimientos.
 
 Incluso podemos implementar modelos híbridos, donde una parte de la infraestructura de la empresa se encuentre virtualizada en la nube y otra, normalmente la más crítica, se implemente de forma local, para evitar eventuales problemas de falta de conexión.
+
+**Ventajas:**
+
+- Flexibilidad, porque podemos elegir casi cualquier aspecto de la implementación: sistema operativo, sistema gestor de bases de datos y casi cualquier otro servicio que necesitemos.
+- Rentabilidad, porque se paga únicamente por lo que consume.
+- Agilidad, porque se reduce el tiempo necesario para que los recursos estén disponibles. En el mundo físico, podríamos tardar semanas en recibir el hardware adecuado e instalarlo y configurarlo correctamente. Usando cloud computing podemos reducirlo a minutos.
+- Elasticidad, porque podremos ampliar o reducir los recursos utilizados en función de nuestras necesidades puntuales.
+- Seguridad, porque se trata de grandes centros de datos que se encuentran altamente protegidos ante posibles ataques físicos y lógicos.
+
+**Inconvenientes:**
+
+- Coste, porque aunque pagamos únicamente por lo que consumimos, estamos pagando constantemente. Un servidor local se paga una vez y se utiliza de forma indefinida. Es decir, este aspecto puede ser una ventaja o un inconveniente, dependiendo de las características particulares de la inversión.
+- Velocidad de transferencia, sobre todo, cuando necesitamos transferir grandes cantidades de datos. La velocidad de una conexión a Internet no puede igualar, al menos de momento, a una conexión local.
+Una variante de esto es que no dispongamos de una conexión a Internet suficientemente rápida para usar estos servicios. No todas las zonas geográficas tienen la misma calidad de servicio.
+- Dependencia de la conexión. Si tenemos nuestros servidores en la nube y un día falla la conexión a Internet, habremos perdido la posibilidad de usarlos.
+  
+ ## Herramientas de virtualización
+
+ 
+
+
+# Bibliografía
+
+- https://somebooks.es/capitulo-7-configuracion-de-maquinas-virtuales/6/
 
