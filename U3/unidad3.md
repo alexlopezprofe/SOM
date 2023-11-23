@@ -83,10 +83,13 @@ VMware Workstation Player es una herramienta para ejecutar máquinas virtuales e
 VMware Workstation Pro es una línea de productos de Hipervisor de escritorio que permiten a los usuarios ejecutar máquinas virtuales, contenedores y clústeres de Kubernetes.
 
 ![image](https://github.com/alexlopezprofe/SOM/assets/148449360/a42a4139-3b86-4e6a-a3cd-9c2d833bd723)
+
 [Comparación VMware Workstation Player VS VMware Workstation Pro](https://www.vmware.com/es/products/workstation-player.html)
 
 
 # Bibliografía
 
 - https://somebooks.es/capitulo-7-configuracion-de-maquinas-virtuales/6/
+- https://www.vmware.com/
+- https://www.virtualbox.org/
 
