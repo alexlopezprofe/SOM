@@ -68,7 +68,22 @@ Una variante de esto es que no dispongamos de una conexión a Internet suficient
   
  ## Herramientas de virtualización
 
+ ### Oracle VM VirtualBox
  
+![image](https://github.com/alexlopezprofe/SOM/assets/148449360/ecf92147-9e91-4440-adcd-b864f8ec576f)
+
+Software de virtualización multiplataforma de **código abierto** que permite ejecutar múltiples sistemas operativos en un solo dispositivo.
+
+### VMware Workstation Player
+
+VMware Workstation Player es una herramienta para ejecutar máquinas virtuales en un equipo con Windows o Linux. Las organizaciones utilizan Workstation Player para ofrecer escritorios corporativos gestionados, mientras que los estudiantes y profesores lo utilizan para aprendizaje y formación. La versión gratuita está disponible para uso personal y doméstico, y que no sea comercial. 
+
+### VMware Workstation Pro
+
+VMware Workstation Pro es una línea de productos de Hipervisor de escritorio que permiten a los usuarios ejecutar máquinas virtuales, contenedores y clústeres de Kubernetes.
+
+![image](https://github.com/alexlopezprofe/SOM/assets/148449360/a42a4139-3b86-4e6a-a3cd-9c2d833bd723)
+[Comparación VMware Workstation Player VS VMware Workstation Pro](https://www.vmware.com/es/products/workstation-player.html)
 
 
 # Bibliografía
