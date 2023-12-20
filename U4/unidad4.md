@@ -1,4 +1,10 @@
-# Unidad 4Comandos de consola de Windows (CMD) ​
+# Unidad 4. Comandos de consola de Windows (CMD) ​
+
+```
+var sumar2 = function(numero) {
+  return numero + 2;
+}
+```
 
 # Concepto de virtualización y máquinas virtuales
 
