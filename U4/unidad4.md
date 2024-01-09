@@ -44,6 +44,27 @@ Un archivo es un elemento que almacena un conjunto de datos para su posterior. U
 - Si un archivo o directorio lleva espacios y queremos acceder a él deberemos utilizar comillas “”
 - Intentaremos evitar los caracteres especiales además de la ñ y ç para nombrar archivos y directorios
 
+  ## Ruta de acceso
+
+Hay dos tipos de ruta que debemos diferenciar:
+
+- **Ruta absoluta:** Se indica toda la ruta del archivo incluyendo el directorio raíz.
+
+```
+C:\carpeta1\carpeta2\archivo1.doc
+
+```
+- **Ruta relativa:** Se indica la ruta a partir de donde este en ese momento situado. No se incluye el directorio raíz. Por ejemplo, si estamos en la ruta
+
+```
+:\carpeta1
+```
+y queremos acceder al archivo1 que está dentro de la carpeta2, seria:
+```
+carpeta2\archivo1.
+
+
+Para ir al directorio padre, usamos dos puntos seguidos (..)
 
 
 
