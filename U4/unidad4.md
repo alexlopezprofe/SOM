@@ -78,9 +78,9 @@ Para ir al directorio padre, usamos dos puntos seguidos (..)
 - **date**: Visualiza la fecha del sistema y permite modificarla
 - **time**: Muestra la hora del sistema y permite modificarla
 - **ver**: Muestra la versión de Windows que estamos utilizando
-- **promt**: Nos indica y cambia el símbolo del sistema [texto] [parámetros]
+- **prompt**: Nos indica y cambia el símbolo del sistema [texto] [parámetros]
 
-<th>Parámetro</th>
+<th>Parámetro de prompt</th>
 <th>Descripción</th>
 </tr>
 </thead>
@@ -194,5 +194,5 @@ Para ir al directorio padre, usamos dos puntos seguidos (..)
 
 # Bibliografía
 
-- 
+- https://learn.microsoft.com/es-es/windows-server/administration/windows-commands/prompt
 
