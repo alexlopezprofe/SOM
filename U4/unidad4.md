@@ -181,7 +181,122 @@ Para ir al directorio padre, usamos dos puntos seguidos (..)
 - **rd (rmdir):** No se puede eliminar un directorio que contenga archivos, incluidos los archivos ocultos o del sistema. Si intenta hacerlo, aparece el siguiente mensaje:
 <pre><code>The directory is not empty
 </code></pre>
+Para quitar un directorio denominado test (y todos sus subdirectorios y archivos) del directorio actual, escriba:
+<pre><code>rmdir /s test
+</code></pre>
 
+- **move:** Mueve uno o varios archivos de un directorio a otro.
+
+Para mover todos los archivos con la extensión .xls del directorio \Data al directorio \Second_Q\Reports, escriba:
+<pre><code>move \data\*.xls \second_q\reports\
+</code></pre>
+
+- **Tree:**Comando que presenta de forma gráfica la estructura de directorios de una ruta de acceso; tiene dos parámetros:
+
+/f: presenta los nombres de los archivos que contiene cada directorio
+
+/a: indica que utilice caracteres de texto en lugar de caracteres gráficos
+
+## Comandos de gestión de archivos
+
+- **type:** Muestra el contenido de un archivo por salida estándar (Pantalla). Este comando no admite el uso de comodines.
+
+- **print:** Imprime el contenido de un fichero
+
+- **ren (rename):** Cambia el nombre a uno o más ficheros
+
+- **copy:** [origen] [destino] Copia uno o más ficheros desde la ubicación origen a la ubicación destino
+
+- **move:** [origen] [destino] Mueve uno o más archivos de un directorio a otro
+
+Parámetros de move:
+
+· /Y Si el fichero existe en el directorio destino lo sustituye sin pedir confirmación
+
+· /-Y Si el fichero existe en el directorio destino, nos pide confirmación para sobrescribirlo.
+
+- **del (delete:** Elimina los archivos especificados.
+
+- **undelete** Permite recuperar ficheros previamente borrados con la orden DEL.
+
+Parámetros:
+
+· /list presenta una lista de archivos recuperables
+
+· /all recupera todos los archivos sin pedir confirmación
+
+· /dos crea una lista de archivos eliminados por el DOS y otra de archivos eliminados por otro motivo
+
+- **attrib** [Nombre_fichero] Se utiliza para cambiar los atributos de los ficheros.
+
+Parámetros:
+
+· +/- a: cambia el atributo de modificado.
+
+· +/- h: modifica el atributo de oculto.
+
+· +/- r: cambia el atributo de sólo lectura.
+
+· +/- s: modifica el atributo de sistema.
+
+- **xcopy:** Permite copiar estructuras completas de archivos y directorios.
+
+Parámetros:
+
+· /a Se copian los archivos dejando el atributo como estaba.
+
+· /m Copia archivos desactivando el atributo de archivo a los archivos que se han copiado.
+
+· /d:FECHA copia los archivos modificados en o después de la fecha indicada
+
+· /p pide confirmación antes de realizar una copia;
+
+· /s permite la copia de subdirectorios a menos que estén vacíos y
+
+· /e copia también directorios vacíos.
+
+- **fc:** Compara dos ficheros
+
+Ejemplo
+
+<pre><code>fc /B fich1.exe c:\fich2.exe
+</code></pre>
+
+## Comandos de red
+
+- **getmac:** permite conocer la dirección MAC de nuestro ordenador.
+
+- **ipconfig**: nos permite visualizar toda la información de las tarjetas de red del equipo de manera detallada.
+
+- **ping**: este es un comando que nos permite comprobar de manera sencilla el estado de nuestra conexión. En el caso de detectar problemas, sirve para identificar su causa.
+
+- **tracert:** establece una ruta desde el equipo local hasta el servidor de destino y muestra todos los saltos que hace la conexión hasta llegar al punto final y ver dónde puede haber errores de conexión en concreto.
+
+- **netstat:** nos deja controlar, analizar y diagnosticar una red desde el CMD, además permite conocer las conexiones que hay abiertas en el equipo PC, tanto locales como remotas.
+
+- **nsLookup:** permite saber si el servidor DNS que tenemos configurado por defecto está traduciendo correctamente las URL a las direcciones IP que se corresponden.
+
+- **nbtstat** para ver las estadísticas del protocolo TCP/IP y las conexiones actuales que hay establecidas en el equipo.
+
+## Filtros y comodines
+
+Existe una técnica por la cual podemos hacer referencia a un grupo de archivos simultáneamente, utilizando los llamados caracteres comodines. Los comodines son caracteres mediante los que podemos simbolizar parte del nombre de un archivo haciendo referencia a más de uno al mismo tiempo.
+
+Los comodines son los caracteres: /* y ?
+
+* Con \* podemos simbolizar varios caracteres.
+
+* Con ? hacemos referencia a un sólo carácter.
+
+Ejemplos:
+
+\*arch Identifica cualquier archivo que acabe con arch, incluido arch.
+
+arch\* Identifica cualquier archivo que comience por arch, incluido arch.
+
+\*arch\* Identifica cualquier archivo que contenga la cadena arch.
+
+arch? Identifica cualquier archivo que comience por arch seguido de un carácter
 
 # Bibliografía
 
