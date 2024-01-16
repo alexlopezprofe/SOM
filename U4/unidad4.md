@@ -35,6 +35,8 @@ Una unidad es un dispositivo que se usa para almencenar información. Una unidad
 
 Un archivo es un elemento que almacena un conjunto de datos para su posterior. Un archivo se define mediante un nombre, seguido de un punto y una extensión. Esta extensión suele ser una combinación de letras y números (normalmente solo letras) de 3 o 4 caracteres.
 
+<center>archivo.txt</center>
+
 ## Consideraciones
 
 - El nombre de los archivos no puede superar los 259 caracteres
