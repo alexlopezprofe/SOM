@@ -75,22 +75,11 @@ Para ir al directorio padre, usamos dos puntos seguidos (..)
 
 - **help**. Una buena forma de comenzar es mediante el comando “help” que nos mostrará una lista con todos los comandos disponibles. “Help + nombre de comando” nos mostrará información sobre un comando específico mientras que “Nombre de comando + /?” nos mostrará todos los modificadores y posibilidades del comando.
 - **cls**: Limpia la pantalla
-- date: Visualiza la fecha del sistema y permite modificarla
-**time**: Muestra la hora del sistema y permite modificarla
-- **VER**: Muestra la versión de Windows que estamos utilizando
-- PROMPT: Nos indica y cambia el símbolo del sistema [texto] [parámetros]
-Los Parámetros van precedidos del símbolo $
--- $t: Hora actual
--- $d: fecha
--- $v: versión
--- $p: ruta actual
--- $n: nombre de la unidad
--- $g: Carácter >
+- **date**: Visualiza la fecha del sistema y permite modificarla
+- **time**: Muestra la hora del sistema y permite modificarla
+- **ver**: Muestra la versión de Windows que estamos utilizando
+- **promt**: Nos indica y cambia el símbolo del sistema [texto] [parámetros]
 
-<h3 id="parameters">Parámetros</h3>
-<table>
-<thead>
-<tr>
 <th>Parámetro</th>
 <th>Descripción</th>
 </tr>
