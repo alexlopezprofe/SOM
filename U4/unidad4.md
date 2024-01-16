@@ -80,22 +80,7 @@ Para ir al directorio padre, usamos dos puntos seguidos (..)
 - **ver**: Muestra la versión de Windows que estamos utilizando
 - **prompt**: Nos indica y cambia el símbolo del sistema [texto] [parámetros]
 
-<th>Parámetro de prompt</th>
-<th>Descripción</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>&lt;text&gt;</code></td>
-<td>Especifica el texto y la información que desea incluir en el símbolo del sistema.</td>
-</tr>
-<tr>
-<td>/?</td>
-<td>Muestra la ayuda en el símbolo del sistema.</td>
-</tr>
-</tbody>
-</table>
-
+**Parámetro de prompt**
 <table>
 <thead>
 <tr>
