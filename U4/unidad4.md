@@ -69,6 +69,26 @@ carpeta2\archivo1.
 Para ir al directorio padre, usamos dos puntos seguidos (..)
 
 
+# Comandos
+
+## Comandos del sistema
+
+- **help**. Una buena forma de comenzar es mediante el comando “help” que nos mostrará una lista con todos los comandos disponibles. “Help + nombre de comando” nos mostrará información sobre un comando específico mientras que “Nombre de comando + /?” nos mostrará todos los modificadores y posibilidades del comando.
+- **CLS**: Limpia la pantalla
+- date: Visualiza la fecha del sistema y permite modificarla
+**time**: Muestra la hora del sistema y permite modificarla
+- **VER**: Muestra la versión de Windows que estamos utilizando
+- PROMPT: Nos indica y cambia el símbolo del sistema [texto] [parámetros]
+Los Parámetros van precedidos del símbolo $
+· T: Hora
+· D: fecha
+· V: versión
+· P: ruta actual
+· N: nombre de la unidad
+· G: Carácter >
+
+
+
 
 # Bibliografía
 
