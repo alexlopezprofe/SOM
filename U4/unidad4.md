@@ -1,10 +1,7 @@
 # Unidad 4. Comandos de consola de Windows (CMD) ​
 
-```
-var sumar2 = function(numero) {
-  return numero + 2;
-}
-```
+![image](https://github.com/alexlopezprofe/SOM/assets/148449360/0afc89a3-8348-4770-b042-af9a727b6c54)
+
 
 # Introducción
 
