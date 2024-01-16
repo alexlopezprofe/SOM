@@ -173,9 +173,14 @@ Para ir al directorio padre, usamos dos puntos seguidos (..)
 
 ## Comandos de gestión de directorios
 
-- **dir** Muestra una lista de los archivos y subdirectorios de un directorio. Si se usa sin parámetros, este comando muestra la etiqueta de volumen y el número de serie del disco, seguido de una lista de directorios y archivos del disco (como los nombres y la fecha y hora en que se modificó por última vez). En el caso de archivos, este comando muestra la extensión de nombre y el tamaño en bytes. Este comando también muestra el total de archivos y directorios que aparecen, el tamaño acumulado y el espacio libre (en bytes) que queda en el disco.
+- **dir:** Muestra una lista de los archivos y subdirectorios de un directorio. Si se usa sin parámetros, este comando muestra la etiqueta de volumen y el número de serie del disco, seguido de una lista de directorios y archivos del disco (como los nombres y la fecha y hora en que se modificó por última vez). En el caso de archivos, este comando muestra la extensión de nombre y el tamaño en bytes. Este comando también muestra el total de archivos y directorios que aparecen, el tamaño acumulado y el espacio libre (en bytes) que queda en el disco.
 
 [Más información del comando **dir** en la ayuda de Microsoft](https://learn.microsoft.com/es-es/windows-server/administration/windows-commands/dir)
+
+- **md (mkdir):** Crea un directorio
+- **rd (rmdir):** No se puede eliminar un directorio que contenga archivos, incluidos los archivos ocultos o del sistema. Si intenta hacerlo, aparece el siguiente mensaje:
+<pre><code>The directory is not empty
+</code></pre>
 
 
 # Bibliografía
