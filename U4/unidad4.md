@@ -95,9 +95,7 @@ Para ir al directorio padre, usamos dos puntos seguidos (..)
 </tr>
 </tbody>
 </table>
-<h4 id="remarks">Comentarios</h4>
-<ul>
-<li><p>Las combinaciones de caracteres que puede incluir en lugar de, o además de, una o varias cadenas de caracteres en el parámetro <em>text</em>:</p>
+
 <table>
 <thead>
 <tr>
@@ -177,7 +175,7 @@ Para ir al directorio padre, usamos dos puntos seguidos (..)
 </tbody>
 </table>
 
-<h3 id="examples">Ejemplos</h3>
+<h3 id="examples">Ejemplos de prompt</h3>
 <p>Para establecer un indicador de comandos de dos líneas con la hora y la fecha actuales en la primera línea y el signo mayor que en la línea siguiente, escriba:</p>
 <pre><code>prompt $d$s$s$t$_$g
 </code></pre>
