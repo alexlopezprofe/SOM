@@ -8,4 +8,4 @@ Sitio web para el módulo Sistemas Operativos Monopuesto de 1º de SMR
 
 [Unidad 3. Introducción a los sistemas operativos. Windows](U3/unidad3.md) 
 
-[Unidad 4. oOmandos de consola de Windows (CMD)](U4/unidad4.md) 
+[Unidad 4. Comandos de consola de Windows (CMD)](U4/unidad4.md) 
