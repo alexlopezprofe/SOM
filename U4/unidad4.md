@@ -39,7 +39,7 @@ Un archivo es un elemento que almacena un conjunto de datos para su posterior. U
 
 - El nombre de los archivos no puede superar los 259 caracteres
 - El sistema se distingue entre mayúsculas y minúsculas
-- Los siguientes caracteres no se pueden utilizar para nombrar archivos o directorios \ / : * ? " < > |
+- Los siguientes caracteres no se pueden utilizar para nombrar archivos o directorios \, /,  :,  *,  ?,  ",  <,  >,  \|
 - Intentaremos evitar los espacios utilizando un guion bajo_
 - Si un archivo o directorio lleva espacios y queremos acceder a él deberemos utilizar comillas “”
 - Intentaremos evitar los caracteres especiales además de la ñ y ç para nombrar archivos y directorios
