@@ -284,7 +284,7 @@ Existe una técnica por la cual podemos hacer referencia a un grupo de archivos 
 
 Los comodines son los caracteres: /* y ?
 
-* Con \* podemos simbolizar varios caracteres.
+* Con * podemos simbolizar varios caracteres.
 
 * Con ? hacemos referencia a un sólo carácter.
 
@@ -297,6 +297,31 @@ arch\* Identifica cualquier archivo que comience por arch, incluido arch.
 \*arch\* Identifica cualquier archivo que contenga la cadena arch.
 
 arch? Identifica cualquier archivo que comience por arch seguido de un carácter
+
+## Atajos de teclado
+
+Además, es posible conocer varios atajos de teclado de CMD que nos permitirán movernos de forma mucho más cómoda y rápida por la interfaz.
+
+Clic derecho del ratón: pegar portapapeles.
+
+* Control + C: permite cancelar a la fuerza la tarea que se está ejecutando.
+
+* Escape: permite borrar lo que hemos escrito antes de ejecutarlo.
+
+* Flecha arriba o abajo: nos permite desplazarnos por los comandos más recientes ejecutados.
+
+* F1: vuelve a escribir el último comando ejecutado, escribiéndolo caracter a caracter.
+
+* F3: escribe el último comando ejecutado, todo de una vez.
+
+* F7: muestra un historial de comandos ejecutados.
+
+* F11: activa o desactiva la pantalla completa.
+
+* Intro: ejecutar el comando.
+
+* Seleccionar + Intro: copiar la selección al portapapeles.
+
 
 # Bibliografía
 
