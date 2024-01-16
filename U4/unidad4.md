@@ -74,20 +74,156 @@ Para ir al directorio padre, usamos dos puntos seguidos (..)
 ## Comandos del sistema
 
 - **help**. Una buena forma de comenzar es mediante el comando “help” que nos mostrará una lista con todos los comandos disponibles. “Help + nombre de comando” nos mostrará información sobre un comando específico mientras que “Nombre de comando + /?” nos mostrará todos los modificadores y posibilidades del comando.
-- **CLS**: Limpia la pantalla
+- **cls**: Limpia la pantalla
 - date: Visualiza la fecha del sistema y permite modificarla
 **time**: Muestra la hora del sistema y permite modificarla
 - **VER**: Muestra la versión de Windows que estamos utilizando
 - PROMPT: Nos indica y cambia el símbolo del sistema [texto] [parámetros]
 Los Parámetros van precedidos del símbolo $
-· T: Hora
-· D: fecha
-· V: versión
-· P: ruta actual
-· N: nombre de la unidad
-· G: Carácter >
+-- $t: Hora actual
+-- $d: fecha
+-- $v: versión
+-- $p: ruta actual
+-- $n: nombre de la unidad
+-- $g: Carácter >
 
-
+<h3 id="parameters">Parámetros</h3>
+<table>
+<thead>
+<tr>
+<th>Parámetro</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&lt;text&gt;</code></td>
+<td>Especifica el texto y la información que desea incluir en el símbolo del sistema.</td>
+</tr>
+<tr>
+<td>/?</td>
+<td>Muestra la ayuda en el símbolo del sistema.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="remarks">Comentarios</h4>
+<ul>
+<li><p>Las combinaciones de caracteres que puede incluir en lugar de, o además de, una o varias cadenas de caracteres en el parámetro <em>text</em>:</p>
+<table>
+<thead>
+<tr>
+<th>Carácter</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$q</td>
+<td>= (signo igual)</td>
+</tr>
+<tr>
+<td>$$</td>
+<td>$ (Signo del dólar)</td>
+</tr>
+<tr>
+<td>$t</td>
+<td>Hora actual</td>
+</tr>
+<tr>
+<td>$d</td>
+<td>Fecha actual</td>
+</tr>
+<tr>
+<td>$p</td>
+<td>Unidad y ruta de acceso actuales</td>
+</tr>
+<tr>
+<td>$v</td>
+<td>Número de versión de Windows</td>
+</tr>
+<tr>
+<td>$n</td>
+<td>Unidad actual</td>
+</tr>
+<tr>
+<td>$g</td>
+<td>&gt; (Signo mayor que)</td>
+</tr>
+<tr>
+<td>$l</td>
+<td>&lt; (Signo menor que)</td>
+</tr>
+<tr>
+<td>$b</td>
+<td><code>|</code> (Símbolo de barra vertical)</td>
+</tr>
+<tr>
+<td>=?</td>
+<td>ENTER-LINEFEED</td>
+</tr>
+<tr>
+<td>$e</td>
+<td>Código de escape ANSI (código 27)</td>
+</tr>
+<tr>
+<td>$h</td>
+<td>Retroceso (para eliminar un carácter escrito en la línea de comandos)</td>
+</tr>
+<tr>
+<td>$a</td>
+<td>& (Y comercial)</td>
+</tr>
+<tr>
+<td>$c</td>
+<td>( (Paréntesis izquierdo)</td>
+</tr>
+<tr>
+<td>$f</td>
+<td>) (Paréntesis derecho)</td>
+</tr>
+<tr>
+<td>$s</td>
+<td>Space</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li><p>Cuando las extensiones de comandos están activadas, el comando <strong>prompt</strong> es compatible con los siguientes caracteres de formato:</p>
+<table>
+<thead>
+<tr>
+<th>Carácter</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$+</td>
+<td>Cero o más caracteres de signo más (<strong>+</strong>), dependiendo de la profundidad de la pila de directorios <strong>pushd</strong> (un carácter por cada nivel insertado).</td>
+</tr>
+<tr>
+<td>$m</td>
+<td>Nombre remoto asociado a la letra de unidad actual o a la cadena vacía si la unidad actual no es una unidad de red.</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li><p>Si incluye el carácter <strong>$p</strong> en el parámetro de texto, se leerá su disco después de escribir cada comando (para determinar la unidad y la ruta de acceso actuales). Esto puede tardar más tiempo, especialmente en unidades de disquete.</p>
+</li>
+</ul>
+<h3 id="examples">Ejemplos</h3>
+<p>Para establecer un indicador de comandos de dos líneas con la hora y la fecha actuales en la primera línea y el signo mayor que en la línea siguiente, escriba:</p>
+<pre><code>prompt $d$s$s$t$_$g
+</code></pre>
+<p>El símbolo del sistema se cambia de la siguiente manera, donde la fecha y hora son actuales:</p>
+<pre><code>Fri 06/01/2007  13:53:28.91
+</code></pre>
+<p>Para establecer el símbolo del sistema para que se muestre como una flecha (<code>--&gt;</code>), escriba:</p>
+<pre><code>prompt --$g
+</code></pre>
+<p>Para cambiar manualmente el símbolo del sistema a la configuración predeterminada (la unidad actual y la ruta de acceso seguidas del signo mayor que), escriba:</p>
+<pre><code>prompt $p$g
+</code></pre>
 
 
 # Bibliografía
