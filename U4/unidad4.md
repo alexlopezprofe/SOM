@@ -61,7 +61,7 @@ C:\carpeta1\carpeta2\archivo1.doc
 y queremos acceder al archivo1 que está dentro de la carpeta2, seria:
 ```
 carpeta2\archivo1.
-
+```
 
 Para ir al directorio padre, usamos dos puntos seguidos (..)
 
@@ -258,6 +258,22 @@ Ejemplo
 
 <pre><code>fc /B fich1.exe c:\fich2.exe
 </code></pre>
+
+## Redireccionamientos
+
+**>** Envía la salida a un archivo o dispositivo (si no existe lo crea)
+
+Ejemplo: DIR *.EXE > EXES.TXT
+
+**>** >Añade la salida a un archivo (no lo sobrescribe).
+
+Ejemplo: TYPE c:\autoexec.bat >> datos.dat
+
+< La entrada proviene del fichero especificado
+
+Ejemplos: FIND "López" < alumnos.ord
+
+C:\>DATE <FECHA.TXT
 
 ## Comandos de red
 
