@@ -23,12 +23,21 @@ En los sistemas Linux existen varios editores de texto de linea de comandos, uno
 
 Para editar un archivo en nano:
 
-```nano nombre_archivo```
+```sudo nano nombre_archivo```
+
+```sudo nano Hello_World.sh```
+
+![image](https://github.com/alexlopezprofe/SOM/assets/148449360/31639694-bee9-4b19-ba7b-b63a340b557e)
+
++ Para guardar los cambios `Control` + `o` y pulsamos `Enter` 
+
+![image](https://github.com/alexlopezprofe/SOM/assets/148449360/2b5dd9a1-6bbe-4ff8-a888-8e987e579a12)
+
++ Para salir `Control` + `x`
 
 En la parte inferior de la ventana, se encuentra una lista de los atajos de comandos más básicos para usar con el editor Nano.
 
 <img width="581" alt="image" src="https://github.com/alexlopezprofe/SOM/assets/148449360/71d9e6ce-4e2c-44da-a5ae-1ed0166bddcf">
-
 
 ### Hotkey Notation
 
@@ -145,11 +154,11 @@ M-/
 DEL
 ```
 
-### Edición de archivos en Linux
+## gedit
 
-Ahora que tienes el fichero creado, si intentas ejecutarlo verás que no podrás. Esto es debido a que cualquier fichero nuevo que se crea y se ubica en el directorio personal de usuario, tiene el siguiente esquema de permisos:
+Gedit es un editor de texto inluido por defecto en Ubuntu (y en otras distribuciones de LInux)
 
-
+```gedit Hello_World.sh```
 
 ## Visual Studio Code
 
@@ -158,6 +167,24 @@ Otra posibilidad es instalar el editor en entorno gráfico **Visual Studio Code*
 Las instrucciones de la instalación se Visual Studio Code en Ubuntu pueden ver en: https://ubunlog.com/visual-studio-code-editor-codigo-abierto-ubuntu-20-04/
 
 # Ejecución de scripts en Linux
+
+## Permisos de ejecución
+Para ejecutar un script, primero tenemos que estar seguros que tenga permisos de ejecución.
+
+Recuerda que para dar todos los permisos a un archivo: ```chmod 777 Hello_World.sh```
+
+## Ejecución de un script
+
+```sudo sh ./Hello_World.sh```
+
+![image](https://github.com/alexlopezprofe/SOM/assets/148449360/9b50a031-5626-47c2-a6dd-bc195b953e82)
+
+Si estamos como root
+
+```sh ./Hello_World.sh``` 
+
+![image](https://github.com/alexlopezprofe/SOM/assets/148449360/e641cf02-36f8-487f-a4ea-916d91266680)
+
 
 # Bibliografía
 
