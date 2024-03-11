@@ -284,3 +284,4 @@ echo $var1
 # Bibliografía
 
 * https://bioinf.comav.upv.es/courses/unix/scripts_bash.html
+* https://github.com/victorhtorres/Terminal-y-linea-de-comandos
