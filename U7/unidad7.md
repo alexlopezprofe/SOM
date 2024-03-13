@@ -171,6 +171,8 @@ Las instrucciones de la instalación se Visual Studio Code en Ubuntu pueden ver 
 ## Permisos de ejecución
 Para ejecutar un script, primero tenemos que estar seguros que tenga permisos de ejecución.
 
+Le damos permisos de ejecución: ```chmod +x task.sh```
+
 Recuerda que para dar todos los permisos a un archivo: ```chmod 777 Hello_World.sh```
 
 ## Ejecución de un script
@@ -279,7 +281,29 @@ read var1
 #Mostrar el valor de la variable de usuario
 echo $var1
 ```
+# Comparaciones numéricas y de cadenas
+En esta sección, vamos a aprender algunos conceptos básicos de las comparaciones de shell de bash numérico y de cadena. Usando comparaciones, podemos comparar cadenas (palabras, oraciones) o números enteros sin procesar o como variables. La siguiente tabla enumera operadores de comparación rudimentarios para números y cadenas:
 
+<table class="uk-table uk-table-striped uk-table-condensed"><caption><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bash Shell Numérico y comparaciones de cadenas</font></font></caption> <thead> <tr> <th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Descripción</font></font></th> <th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Comparación numérica</font></font></th> <th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Comparación de cadenas</font></font></th> </tr> </thead><tfoot> <tr> <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ejemplo de comparación de shell: </font></font></td> <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">[100 -eq 50]; </font><font style="vertical-align: inherit;">echo $?</font></font></td> <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">["GNU" = "UNIX"]; </font><font style="vertical-align: inherit;">echo $?</font></font></td> </tr> </tfoot> <tbody> <tr> <td class="uk-text-primary uk-text-bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">menos que</font></font></td> <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">-lt</font></font></td> <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">&lt;</font></font></td> </tr> <tr> <td class="uk-text-primary uk-text-bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">mas grande que</font></font></td> <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">-gt</font></font></td> <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">&gt;</font></font></td> </tr> <tr> <td class="uk-text-primary uk-text-bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">igual</font></font></td> <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">-eq</font></font></td> <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">=</font></font></td> </tr> <tr> <td class="uk-text-primary uk-text-bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">no es igual</font></font></td> <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">-Nebraska</font></font></td> <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">! =</font></font></td> </tr> <tr><td class="uk-text-primary uk-text-bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">menor o igual</font></font></td> <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">-le</font></font></td> <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">N / A</font></font></td> </tr>  <tr><td class="uk-text-primary uk-text-bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">mayor o igual</font></font></td> <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">-ge</font></font></td> <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">N / A</font></font></td> </tr> </tbody> </table>
+
+## Ejemplo de comparaciones
+
+    a=1
+    b=2
+    # a menor que b
+    [ $a -lt $b ]; echo $?
+    # b mayor que a
+    [ $b -gt $a ]; echo $?
+    # a igual que b
+    b=1
+    [ $a -eq $b ]; echo $?
+    # a menor o igual que b
+    [ $a -le ]: echo $?
+    # b mayor o igual que a
+    b=2
+    [ $b -ge $a ]; echo $?
+    # a no es igual que b
+    [ $a -ne $b ]; echo $?
 
 # Bibliografía
 
