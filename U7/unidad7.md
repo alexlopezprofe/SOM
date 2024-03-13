@@ -309,3 +309,4 @@ En esta sección, vamos a aprender algunos conceptos básicos de las comparacion
 
 * https://bioinf.comav.upv.es/courses/unix/scripts_bash.html
 * https://github.com/victorhtorres/Terminal-y-linea-de-comandos
+* https://github.com/hatsem78/tutorial_bash_script_lunux
