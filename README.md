@@ -10,5 +10,7 @@ Sitio web para el módulo Sistemas Operativos Monopuesto de 1º de SMR
 
 [Unidad 4. Comandos de consola de Windows (CMD)](U4/unidad4.md) 
 
+[Unidad 6. Introducción a Linux](U6/unidad6.md)
+
 [Unidad 7. Introducción a Shell-script en Linux](U7/unidad7.md)
 
