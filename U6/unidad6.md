@@ -1,5 +1,7 @@
 # Unidad 6. Introducción a Linux
 
+<div style="text-align:center"><img src="https://github.com/alexlopezprofe/SOM/assets/148449360/7357e3c4-9593-47b5-81f7-8744aacd1152" width="25%"></div>
+
 Linux es un sistema operativo de código abierto, conocido por su estabilidad, seguridad y flexibilidad. Surgió en 1991 como un proyecto personal del programador finlandés Linus Torvalds, quien buscaba crear un sistema similar a UNIX pero que pudiera ser modificado y distribuido libremente.
 
 Una de las características distintivas de Linux es su núcleo, el kernel Linux, que gestiona los recursos del hardware y permite que el sistema funcione. Aunque el kernel es solo una parte del sistema operativo completo, el término "Linux" se utiliza comúnmente para referirse a todo el sistema.
