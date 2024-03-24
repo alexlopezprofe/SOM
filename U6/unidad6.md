@@ -1,5 +1,46 @@
 # Unidad 6. Introducción a Linux
 
+Linux es un sistema operativo de código abierto, conocido por su estabilidad, seguridad y flexibilidad. Surgió en 1991 como un proyecto personal del programador finlandés Linus Torvalds, quien buscaba crear un sistema similar a UNIX pero que pudiera ser modificado y distribuido libremente.
+
+Una de las características distintivas de Linux es su núcleo, el kernel Linux, que gestiona los recursos del hardware y permite que el sistema funcione. Aunque el kernel es solo una parte del sistema operativo completo, el término "Linux" se utiliza comúnmente para referirse a todo el sistema.
+
+Linux se ha convertido en un componente fundamental en una amplia gama de dispositivos, desde servidores hasta dispositivos móviles y sistemas embebidos. También es la base de numerosas distribuciones, como Ubuntu, Fedora, Debian y CentOS, cada una con sus propias características y enfoques, pero todas compartiendo el núcleo Linux.
+
+Una de las principales ventajas de Linux es su naturaleza de código abierto, lo que significa que su código fuente está disponible públicamente para que cualquiera lo examine, modifique y distribuya según sus necesidades. Esto ha llevado a una comunidad activa de desarrolladores y usuarios que contribuyen al desarrollo y mejora continua del sistema.
+
+Además de su robustez y flexibilidad, Linux ofrece una amplia variedad de herramientas y aplicaciones gratuitas y de código abierto que cubren casi todas las necesidades informáticas, desde la navegación web hasta el desarrollo de software y la administración de servidores.
+
+# Distribuciones de Linux
+
+Las distribuciones de Linux, comúnmente llamadas "distros", son variantes del sistema operativo Linux que combinan el núcleo Linux con un conjunto específico de software y configuraciones para satisfacer las necesidades de diferentes usuarios y casos de uso. Cada distribución tiene su propia filosofía, objetivos y enfoque, lo que las hace únicas en términos de características, facilidad de uso, rendimiento y público objetivo.
+
+Aquí hay una descripción general de algunas de las distribuciones de Linux más populares:
+
+1. **Ubuntu**: Conocida por su facilidad de uso y amplia compatibilidad de hardware, Ubuntu es una de las distribuciones más populares tanto para usuarios domésticos como para servidores. Está basada en Debian y se centra en la facilidad de instalación, la estabilidad y el acceso a una gran cantidad de software a través de su gestor de paquetes.
+
+2. **Debian**: Considerada una de las distribuciones más antiguas y estables, Debian es conocida por su compromiso con el software libre y su amplia selección de paquetes. Es la base de muchas otras distribuciones, incluyendo Ubuntu, y es popular entre usuarios avanzados y administradores de sistemas.
+
+3. **Fedora**: Mantenida por la comunidad y respaldada por Red Hat, Fedora es conocida por su enfoque en la innovación y la adopción temprana de nuevas tecnologías. Es ideal para usuarios que desean estar a la vanguardia de las últimas características y mejoras en el software de código abierto.
+
+4. **CentOS**: Derivada de la fuente abierta de Red Hat Enterprise Linux (RHEL), CentOS es una opción popular para servidores y entornos empresariales debido a su estabilidad y largo ciclo de vida de soporte. Es conocida por su compatibilidad con aplicaciones empresariales y su enfoque en la confiabilidad y seguridad.
+
+5. **Linux Mint**: Basada en Ubuntu, Linux Mint se destaca por su facilidad de uso y su experiencia de escritorio amigable. Viene preinstalada con una variedad de software útil y está diseñada para ser familiar para usuarios que están migrando desde otros sistemas operativos como Windows.
+
+6. **Arch Linux**: Dirigida a usuarios avanzados y entusiastas de Linux, Arch Linux sigue un enfoque de "hágalo usted mismo", donde los usuarios construyen su sistema desde cero seleccionando y configurando manualmente los componentes que desean. Es conocida por su simplicidad y minimalismo, así como por su comunidad activa y documentación detallada.
+
+Estas son solo algunas de las muchas distribuciones de Linux disponibles, cada una con sus propias fortalezas, características y comunidad de usuarios. La elección de una distribución depende en gran medida de las necesidades y preferencias individuales del usuario.
+
+## Carpetas relevantes en Linux
+
++ **/** **(root)**: Es la carpeta principal del sistema de archivos. Todas las demás carpetas y archivos se encuentran dentro de esta carpeta.
++  **/home**: Contiene las carpetas de inicio de los usuarios. Cada usuario tiene su propia carpeta dentro de /home que sirve como su espacio de trabajo personal.
++  **/etc**: Almacena archivos de configuración del sistema. Aquí se encuentran archivos de configuración para diversos servicios y aplicaciones.
++  **/var**: Contiene datos variables, como archivos de registro (logs), correos electrónicos y otros datos que pueden cambiar con el tiempo.
++  **/bin y /usr/bin**: Contienen programas ejecutables (binarios) accesibles para todos los usuarios del sistema.
++  **/sbin y /usr/sbin**: Almacenan programas ejecutables de administración del sistema, generalmente reservados para usuarios con privilegios de administrador (root).
++  **/tmp**: Es un directorio temporal utilizado por aplicaciones para almacenar archivos temporales. El contenido de esta carpeta se borra cuando se reinicia el sistema.
+
+
 # Indicador de tipo de ficheros
 
 El comando `ls` Muestra el listado del directorio actual; si le añadimos la opcion `-l`, `ls -l` nos permite listar la información de tipo de archivo, de permisos, usuario, grupo, tamaño, fecha de modificación entre otras características más, del directorio actual.
