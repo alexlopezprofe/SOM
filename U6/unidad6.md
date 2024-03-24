@@ -34,6 +34,12 @@ Estas son solo algunas de las muchas distribuciones de Linux disponibles, cada u
 
 + **/** **(root)**: Es la carpeta principal del sistema de archivos. Todas las demás carpetas y archivos se encuentran dentro de esta carpeta.
 +  **/home**: Contiene las carpetas de inicio de los usuarios. Cada usuario tiene su propia carpeta dentro de /home que sirve como su espacio de trabajo personal.
+
+```bash
+user@user-virtual-machine:/home$ ls 
+user
+```
+
 +  **/etc**: Almacena archivos de configuración del sistema. Aquí se encuentran archivos de configuración para diversos servicios y aplicaciones.
 +  **/var**: Contiene datos variables, como archivos de registro (logs), correos electrónicos y otros datos que pueden cambiar con el tiempo.
 +  **/bin y /usr/bin**: Contienen programas ejecutables (binarios) accesibles para todos los usuarios del sistema.
@@ -41,7 +47,7 @@ Estas son solo algunas de las muchas distribuciones de Linux disponibles, cada u
 +  **/tmp**: Es un directorio temporal utilizado por aplicaciones para almacenar archivos temporales. El contenido de esta carpeta se borra cuando se reinicia el sistema.
 
 
-# Indicador de tipo de ficheros
+# Información de los archivos
 
 El comando `ls` Muestra el listado del directorio actual; si le añadimos la opcion `-l`, `ls -l` nos permite listar la información de tipo de archivo, de permisos, usuario, grupo, tamaño, fecha de modificación entre otras características más, del directorio actual.
 
@@ -54,7 +60,7 @@ ls -l
 
 ![image](https://github.com/alexlopezprofe/SOM/assets/148449360/13979e26-3499-4f2b-bf62-8565b4d5919e)
 
-## Tipos de ficheros:
+## Tipos de archivo:
 
 | Símbolo | Tipo de archivo         | Descripción                                                              |
 |---------|-------------------------|--------------------------------------------------------------------------|
@@ -69,7 +75,7 @@ ls -l
 
 
 
-# Permisos de archivos
+# Permisos
 
 En Linux, los permisos de archivos y carpetas son un componente importante para gestionar la seguridad y el acceso a la información almacenada en el sistema de archivos de tu equipo. Estos permisos definen quién puede leer, escribir o ejecutar un archivo o directorio y desempeñan un papel fundamental en la protección de la integridad del sistema y la privacidad de los datos.
 
@@ -80,7 +86,7 @@ Puede parecer simple, pero todo puede llegar a tener cierta complejidad a la hor
 * **Ejecución (x):** Permite a los usuarios ejecutar diferentes parámetros dentro del equipo.
 * **Sin permisos (-):** Nos indica que el usuario no tiene ningún tipo de permiso sobre el recurso de red o contenido compartido.
 
-# Niveles de permisos
+## Niveles de permisos
 
 * **Propietario/Usuario (user - u):** El propietario es el usuario que creó el archivo o directorio. Este tiene el control total sobre los permisos y puede modificarlos según sus necesidades. Los permisos del propietario afectan directamente al usuario que creó el archivo.
 *  **Grupo (group - g):** En Linux, los usuarios se organizan en grupos y un archivo o directorio puede pertenecer a uno de estos grupos. Los permisos asignados al grupo afectan a todos los usuarios que forman parte de ese grupo, permitiéndoles acceder y modificar archivos en conjunto.
@@ -113,7 +119,7 @@ La combinación de estas tres categorías o niveles y sus respectivos permisos c
 | `rwxrwxrwx` (777)          | Todo el mundo puede leer, escribir y ejecutar. ¡Tampoco es una buena elección! |
 
 
-# Cambio de permisos
+## Cambio de permisos
 
 Para cambiar los permisos de un archivo o directorio en Linux, puedes utilizar el comando `chmod`. Este comando te permite modificar los permisos de lectura, escritura y ejecución para el propietario del archivo, el grupo al que pertenece y para otros usuarios.
 
@@ -135,7 +141,7 @@ chmod [opciones] permisos archivo/directorio
 | `--version`            | Muestra la versión del comando.                                 |
 
 
-## Ejemplos notación simbólica:
+### Ejemplos notación simbólica:
 
 | Ejemplo               | Descripción                                        | Resultado         |
 |-----------------------|----------------------------------------------------|-------------------|
@@ -153,7 +159,7 @@ chmod [opciones] permisos archivo/directorio
 | `$ chmod ug+wx,o-x foto1.png` | Añadimos permiso de escritura y ejecución al propietario y grupo, y eliminamos permiso de ejecución a otros | rwxrwx---         |
 | `$ chmod a=rw foto1.png` | Permite a cualquiera modificar el contenido e incluso eliminar el archivo | rw-rw-rw-         |
 
-## Ejemplos notación octal:
+### Ejemplos notación octal:
 
 | Ejemplo               | Descripción                                        | Resultado         |
 |-----------------------|----------------------------------------------------|-------------------|
@@ -171,7 +177,7 @@ chmod [opciones] permisos archivo/directorio
 | `$ chmod 770 foto2.png` | Añadimos permiso de escritura y ejecución al propietario y grupo, y eliminamos permiso de ejecución a otros | -rwxrwx---         |
 | `$ chmod 666 foto2.png` | Permite a cualquiera modificar el contenido e incluso eliminar el archivo | -rw-rw-rw-         |
 
-## Recursividad
+### Recursividad
 
 Si cambiamos los permisos a un directorio y deseamos que estos permisos tengan efecto sobre todos sus subdirectorios y archivos
 sólo deberemos añadir la opción `–R`. 
