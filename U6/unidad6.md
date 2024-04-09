@@ -75,7 +75,28 @@ ls -l
 | s       | Socket                  | Comunicación interprocesos a través de la red o del sistema de archivos  |
 | -       | Enlace duro             | Nombre adicional (alias) para un archivo existente                       |
 
+# Tipos de usuarios:
 
+* usuario **root** (El todo poderoso)
+	* Administrador del sistema
+	* Acceso total a todos los archivos y directorios
+	* Controla la administración de cuentas de usuarios
+	* Tiene privilegios sobre todo el sistema 
+	* Modifica, instala, detiene, reconfigura procesos del sistema.
+* Usuarios **especiales**
+	* bin, daemon, adm, lp, sync, shutdown, mail, operator, squid, apache, etc.
+	* Se les conoce como cuentas de "no inicio de sesión" (nologin). 
+	* Comúnmente como cuentas del sistema.	
+	* Asumen distintos privilegios de root dependiendio de la cuenta.
+	* No tienen contraseñas.	
+	* Generalmente se crean automáticamente al momento de la instalación de Linux o de la aplicación.
+* Usuarios **normales**
+	* Se usan para usuarios individuales.
+	* Cada usuario dispone de un directorio de trabajo, ubicado generalmente en /home.
+	* Cada usuario puede personalizar su entorno de trabajo.
+	* Tienen solo privilegios completos en su directorio de trabajo o HOME.
+
+Un Sistema **Multiusuario** permite que dos o más usuarios utilicen sus programas.
 
 # Permisos
 
