@@ -11,14 +11,11 @@ La estructura básica de un script en Linux es la siguiente
 # Este es nuestro primer programa
 echo "Hello world"
 ```
-A la expresión ```**#!/bin/bash``** se le conoce como el **Shebang**
-La segunda línea es un **comentario**, los comentarios en Shell Script comienzan con **#**
-
-> El espacio en blanco después de la # no es obligatorio, pero va a mejorar el comentario de la legibilidad.
-
-En la tercera línea tenemos el comando ```echo``` que sirve para imprimir texto en la pantalla.
-
-Los scripts se guardan con la etension **.sh**
+* A la expresión ```**#!/bin/bash``** se le conoce como el **Shebang**
+* La segunda línea es un **comentario**, los comentarios en Shell Script comienzan con **#**
+* El espacio en blanco después de la # no es obligatorio, pero va a mejorar el comentario de la legibilidad.
+*  La tercera línea tenemos el comando ```echo``` que sirve para imprimir texto en la pantalla.
+*  Los scripts se guardan con la etension **.sh**
 
 # Edición de archivos de texto en Linux
 
