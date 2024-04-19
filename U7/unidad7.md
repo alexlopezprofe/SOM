@@ -174,14 +174,14 @@ Para ejecutar un script, primero tenemos que estar seguros que tenga permisos de
 
 Le damos permisos de ejecución: ```chmod +x task.sh```
 
-Recuerda que para dar todos los permisos a un archivo: ```chmod 777 Hello_World.sh```
+Recuerda que para dar todos los permisos a un archivo: ```chmod 777 Hello_World.sh```. Recuerda que otorgar el permiso 777 no es recomendable en entornos en producción.
 
 ## Ejecución de un script
 
 ```sudo sh ./Hello_World.sh```
 
 ![image](https://github.com/alexlopezprofe/SOM/assets/148449360/9b50a031-5626-47c2-a6dd-bc195b953e82)
-
+.::
 Si estamos como root
 
 ```sh ./Hello_World.sh``` 
