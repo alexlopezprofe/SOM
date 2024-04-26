@@ -450,8 +450,40 @@ Los condicionales en Bash se utilizan para ejecutar bloques de código basados e
 
 ### Ejemplo de condicional "if-else":
 
+Su forma más sencilla es:
+
+```bash
+if CONDICION; then
+    comandos
+fi 
+```
+Si la CONDICION es verdadera, ejecuta los comandos especificados, si es falsa, no hace nada.
+
+
+A esto le podemos añadir que ejecute otras instrucción únicamente si la condición es falsa:
+```bash
+if CONDICION; then
+  comandos
+else
+  otros comandos
+fi
+```
+
+Y por último podemos encadenar distintas condiciones:
+```bash
+if CONDICION; then
+  comandos
+elif CONDICION; then
+  otros comandos
+else
+  otros comandos distintos
+fi
+```
+
+**Ejemplo**
 ```bash
 # Definir una variable
+
 edad=20
 
 # Condicional if-else
@@ -464,7 +496,49 @@ fi
 
 En el ejemplo anterior, se evalúa si la variable edad es mayor o igual a 18. Si es verdadero, se imprime "Eres mayor de edad."; de lo contrario, se imprime "Eres menor de edad.".
 
+## Estructura CASE
+
+La sentencia case ejecutará unas instrucciones u otras en función del valor que encuentre en una variable o expresión. Es útil cuando la cantidad de valores a considerar es elevada ya que es una estructura muy legible y fácil de interpretar. En esta ocasión valor NO es un únicamente verdadero o falso, sino que contiene un dato y en función de él ejecutaremos una líneas u otras.
+
+```bash
+case valor in
+         exp1)
+             ...
+             ultimaorden1;;
+         exp2)
+             ...
+             ultimaorden2;;
+         expN)
+             ...
+            ultimaordenN;;
+  esac
+```
+La ultima orden de cada bloque termina con doble punto y coma para indicar que termina el “CASE”
+
+**Ejemplo**
+```bash
+case $1 in
+         "rm")
+             echo "has elegido el comando borrar";;
+         "cp")
+             echo "has elegido el comando copiar";;
+         "ls")
+             echo "has elegido el comando listar";;
+esac
+```
+
 ## Bucle for
+
+```bash
+for VARIABLE in SERIE; do
+    bloque de comandos
+done
+```
+**Ejemplos**
+
+> [!NOTE]  
+> Los tres siguientes ejemplos de bucle for son equivalentes. Itera sobre los números del 1 al 5 e imprime el mensaje "Iteración x" en cada iteración.
+
 
 ```bash
 # Bucle for para iterar sobre una lista de elementos
@@ -472,10 +546,36 @@ for i in {1..5}; do
     echo "Iteración $i"
 done
 ```
-Este bucle for itera sobre los números del 1 al 5 e imprime el mensaje "Iteración x" en cada iteración.
+
+```bash
+for i in 1 2 3 4 5; do
+   echo "Iteración $i"
+done
+```
+```bash
+for i in $(seq 1 5); do
+  echo "Iteración $i"
+done
+
+```
+
+**Ejemplo con palabras**
+
+```bash
+for palabra in uno dos tres cuatro cinco; do
+  echo $palabra
+done
+
+````
 
 ## Bucle while
 
+```bash
+while [ condición ]; do
+[COMANDOS]
+done
+```
+**Ejemplo**
 ```bash
 # Bucle while para repetir una acción mientras se cumpla una condición
 contador=0
