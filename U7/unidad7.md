@@ -565,8 +565,7 @@ done
 for palabra in uno dos tres cuatro cinco; do
   echo $palabra
 done
-
-````
+```
 
 ## Bucle while
 
@@ -586,8 +585,74 @@ done
 ```
 En este ejemplo, se ejecuta un bucle while que incrementa el contador en cada iteración y muestra su valor hasta que el contador sea menor que 5.
 
+# Arrays Shell Script
+Los arrays son una estructura de datos que nos permite almacenar múltiples valores en una sola variable. En shell script, los arrays pueden contener números, cadenas de texto u otros datos.
+
+## Declaración de Arrays
+Para declarar un array en shell script, utilizamos la siguiente sintaxis:
+
+```bash
+nombre_array=(valor1 valor2 valor3 ...)
+```
+**Por ejemplo:**
+```bash
+nombres=("Juan" "María" "Carlos" "Luisa")
+edades=(20 25 30 35)
+```
+
+## Acceso a los Elementos
+
+Para acceder a los elementos de un array, utilizamos su índice entre corchetes [ ]. Los índices en shell script comienzan desde 0.
+
+**Acceder al primer elemento del array nombres**
+```bash 
+echo ${nombres[0]}
+```
+**Acceder al segundo elemento del array edades**
+```bash
+echo ${edades[1]}
+```
+### Longitud del Array
+Podemos obtener la longitud de un array utilizando la expresión 
+
+```
+${#nombre_array[@]}.
+```
+
+**Obtener la longitud del array nombres**
+```bash
+echo "La longitud del array nombres es: ${#nombres[@]}"
+```
+### Iteración a través de un Array
+Podemos iterar a través de un array utilizando un bucle for.
 
 
+# Iterar a través del array nombres
+```bash
+for nombre in "${nombres[@]}"
+do
+    echo "Nombre: $nombre"
+done
+```
+### Modificación de Elementos
+Podemos modificar un elemento del array asignándole un nuevo valor.
+
+```bash
+edades[1]=28
+```
+Añadir Elementos
+Podemos añadir elementos a un array utilizando el operador +=.
+
+### Añadir un nuevo nombre al array nombres
+```
+nombres+=("Ana")
+```
+### Eliminar Elementos
+Para eliminar un elemento de un array, podemos utilizar la palabra clave unset.
+
+```
+unset edades[1]
+```
 
 
 # Bibliografía
