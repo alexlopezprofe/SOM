@@ -287,24 +287,208 @@ En esta sección, vamos a aprender algunos conceptos básicos de las comparacion
 
 <table class="uk-table uk-table-striped uk-table-condensed"><caption><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bash Shell Numérico y comparaciones de cadenas</font></font></caption> <thead> <tr> <th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Descripción</font></font></th> <th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Comparación numérica</font></font></th> <th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Comparación de cadenas</font></font></th> </tr> </thead><tfoot> <tr> <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ejemplo de comparación de shell: </font></font></td> <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">[100 -eq 50]; </font><font style="vertical-align: inherit;">echo $?</font></font></td> <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">["GNU" = "UNIX"]; </font><font style="vertical-align: inherit;">echo $?</font></font></td> </tr> </tfoot> <tbody> <tr> <td class="uk-text-primary uk-text-bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">menos que</font></font></td> <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">-lt</font></font></td> <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">&lt;</font></font></td> </tr> <tr> <td class="uk-text-primary uk-text-bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">mas grande que</font></font></td> <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">-gt</font></font></td> <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">&gt;</font></font></td> </tr> <tr> <td class="uk-text-primary uk-text-bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">igual</font></font></td> <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">-eq</font></font></td> <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">=</font></font></td> </tr> <tr> <td class="uk-text-primary uk-text-bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">no es igual</font></font></td> <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">-Nebraska</font></font></td> <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">! =</font></font></td> </tr> <tr><td class="uk-text-primary uk-text-bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">menor o igual</font></font></td> <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">-le</font></font></td> <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">N / A</font></font></td> </tr>  <tr><td class="uk-text-primary uk-text-bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">mayor o igual</font></font></td> <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">-ge</font></font></td> <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">N / A</font></font></td> </tr> </tbody> </table>
 
-## Ejemplo de comparaciones
+## Ejemplo de comparación numérica
 
-    a=1
-    b=2
-    # a menor que b
-    [ $a -lt $b ]; echo $?
-    # b mayor que a
-    [ $b -gt $a ]; echo $?
-    # a igual que b
-    b=1
-    [ $a -eq $b ]; echo $?
-    # a menor o igual que b
-    [ $a -le ]: echo $?
-    # b mayor o igual que a
-    b=2
-    [ $b -ge $a ]; echo $?
-    # a no es igual que b
-    [ $a -ne $b ]; echo $?
+```bash
+#!/bin/bash
+
+if [ "$a" -eq "$b" ]; then
+	echo "\$a es IGUAL que \$b"
+fi
+
+if [ "$a" -ne "$b" ]; then
+	echo "\$a NO ES IGUAL que \$b"
+fi
+
+if [ "$a" -gt "$b" ]; then
+	echo "\$a es MAYOR que \$b"
+fi
+
+if [ "$a" -lt "$b" ]; then
+	echo "\$a es MENOR que \$b"
+fi
+
+if [ "$a" -ge "$b" ]; then
+	echo "\$a es MAYOR O IGUAL que \$b"
+fi
+
+if [ "$a" -le "$b" ]; then
+	echo "\$a es MENOR O IGUAL que \$b"
+fi
+```
+
+## Otro ejemplo de comparación numérica
+
+```bash
+#!bin/bash
+
+echo "Ingresa tu edad: "
+read AGE
+if ["$AGE" -lt 20] || ["$AGE" -ge 50]; then
+	echo "No esta en el rango 20-50.";
+	elif ["$AGE" -ge 20 ] && ["$AGE" -lt 30]; then
+		echo "Estas en los 20.";
+	elif ["$AGE" -ge 30] && ["$AGE" -lt 40]; then
+		echo "Estas en los 30.";
+	elif ["$AGE" -ge 40] && ["$AGE" -lt 50]; then
+		echo "Estas en los 40.";
+fi
+
+```
+
+
+## Ejemplo de comparación de cadenas
+
+```bash
+#!/bin/bash
+
+if [ "$a" = "$b" ]; then
+	echo "\$a es IGUAL que \$b"
+fi
+
+if [ "$a" == "$b" ]; then
+	echo "\$a es IGUAL que \$b"
+fi
+
+if [ "$a" != "$b" ]; then
+	echo "\$a NO ES IGUAL que \$b"
+fi
+
+if [ "$a" \> "$b" ]; then
+	echo "\$a es MAYOR que \$b"
+fi
+
+if [ "$a" \< "$b" ]; then
+	echo "\$a es MENOR que \$b"
+fi
+
+if [ -z "$a" ]; then
+	echo "\$a ES NULO"
+fi
+
+if [ -n "$a" ]; then
+	echo "\$a NO ES NULO"
+fi
+```
+
+# Operaciones Aritméticas 
+
+## Operadores aritméticos
+
+En Bash, los operadores aritméticos son símbolos que se utilizan para realizar operaciones matemáticas en expresiones numéricas. Algunos de los operadores aritméticos más comunes en Bash son:
+
+1. **Suma (`+`)**: Se utiliza para sumar dos valores.
+   
+2. **Resta (`-`)**: Se utiliza para restar el segundo valor del primero.
+
+3. **Multiplicación (`*`)**: Se utiliza para multiplicar dos valores.
+
+4. **División (`/`)**: Se utiliza para dividir el primer valor por el segundo.
+
+5. **Módulo (`%`)**: Devuelve el resto de la división entera del primer valor por el segundo.
+
+6. **Incremento (`++`)**: Aumenta el valor de una variable en uno.
+
+7. **Decremento (`--`)**: Reduce el valor de una variable en uno.
+
+En shell script, puedes realizar operaciones aritméticas utilizando varias técnicas.
+
+## Usando la Expresión `$(( ))`
+La forma más común de realizar operaciones aritméticas en Bash es mediante la expresión `$(( ))`. Dentro de esta expresión, puedes colocar cualquier operación aritmética básica.
+
+Por ejemplo:
+
+```bash
+resultado=$((5 + 3))
+echo "El resultado es $resultado"
+```
+
+
+```bash
+suma=$((10 + 5))
+resta=$((20 - 8))
+multiplicacion=$((4 * 6))
+division=$((25 / 5))
+modulo=$((10 % 3))
+
+echo "Suma: $suma"
+echo "Resta: $resta"
+echo "Multiplicación: $multiplicacion"
+echo "División: $division"
+echo "Módulo: $modulo"
+```
+
+## Utilizando `expr`
+Otra forma de realizar operaciones aritméticas es utilizando el comando `expr`.
+
+Por ejemplo:
+
+```bash
+resultado=`expr 10 + 20`
+echo "El resultado es $resultado"
+```
+
+## Utilizando `let`
+También puedes usar el comando `let` para realizar operaciones aritméticas.
+
+Por ejemplo:
+
+```bash
+let resultado=10+5
+echo "El resultado es $resultado"
+```
+
+# Control de flujo
+
+Los scripts se ejecutan línea a línea hasta llegar al final, sin embargo, muchas veces nos interesará modificar ese comportamiento de manera que el programa pueda responder de un modo u otro dependiendo de las cirscunstancias o pueda repetir trozos de código.
+
+![alt text](image.png)
+
+## Condicionales
+
+Los condicionales en Bash se utilizan para ejecutar bloques de código basados en el resultado de una expresión condicional.
+
+### Ejemplo de condicional "if-else":
+
+```bash
+# Definir una variable
+edad=20
+
+# Condicional if-else
+if [ $edad -ge 18 ]; then
+    echo "Eres mayor de edad."
+else
+    echo "Eres menor de edad."
+fi
+```
+
+En el ejemplo anterior, se evalúa si la variable edad es mayor o igual a 18. Si es verdadero, se imprime "Eres mayor de edad."; de lo contrario, se imprime "Eres menor de edad.".
+
+## Bucle for
+
+```bash
+# Bucle for para iterar sobre una lista de elementos
+for i in {1..5}; do
+    echo "Iteración $i"
+done
+```
+Este bucle for itera sobre los números del 1 al 5 e imprime el mensaje "Iteración x" en cada iteración.
+
+## Bucle while
+
+```bash
+# Bucle while para repetir una acción mientras se cumpla una condición
+contador=0
+while [ $contador -lt 5 ]; do
+    echo "El contador es: $contador"
+    ((contador++))
+done
+```
+En este ejemplo, se ejecuta un bucle while que incrementa el contador en cada iteración y muestra su valor hasta que el contador sea menor que 5.
+
+
+
+
 
 # Bibliografía
 
