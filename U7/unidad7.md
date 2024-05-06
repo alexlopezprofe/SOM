@@ -178,6 +178,7 @@ Recuerda que para dar todos los permisos a un archivo: ```chmod 777 Hello_World.
 
 ## Ejecución de un script
 
+### sh
 ```sudo sh ./Hello_World.sh```
 
 ![image](https://github.com/alexlopezprofe/SOM/assets/148449360/9b50a031-5626-47c2-a6dd-bc195b953e82)
@@ -188,6 +189,11 @@ Si estamos como root
 
 ![image](https://github.com/alexlopezprofe/SOM/assets/148449360/e641cf02-36f8-487f-a4ea-916d91266680)
 
+### bash
+
+Bash es una ampliación de sh, es posible Por lo tanto algunas construcciones/funciones que funcionan en bash puede que no funcionen en sh mientras que todo lo que funciona en sh debería funcionar en bash.
+
+```bash ./Hello_World.sh```
 
 # Variables en Shell Script
 
