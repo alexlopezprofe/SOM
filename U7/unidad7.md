@@ -567,6 +567,22 @@ for palabra in uno dos tres cuatro cinco; do
 done
 ```
 
+### Bucle for tipo C
+
+De forma similar al bucle for usado en C generamos un bucle for que estará iterando hasta que la variable que inicialicemos ( en el ejemplo '$i') alcance un determinado valor i = 100. Es util si queremos realizar una accion un numero determinado de veces.
+
+```
+for ((inicializacion; condicion; incremento)); do
+   bloque de sentencias
+done
+```
+**Ejemplo**
+```
+for ((i = 0 ; i < 100 ; i++)); do
+  echo $i
+done
+```
+
 ## Bucle while
 
 ```bash
@@ -612,6 +628,24 @@ echo ${nombres[0]}
 ```bash
 echo ${edades[1]}
 ```
+
+**Acceso a varios elementos del array**
+```
+digito1=${numero:0:1}
+dosprimerosdigitos=${numero:0:2}
+tresdigitos=${numero:1:3}
+```
+
+* **Numero* es una variable que contiene un valor, probablemente un número. Esta variable se está utilizando como entrada para la expansión de parámetros.
+* :0:1: Esta parte es una especificación de la expansión de parámetros. Está diciendo que deseamos extraer una porción del contenido de la variable numero.
+* El primer número después del primer : (en este caso, 0) indica el índice inicial desde el cual deseamos extraer el contenido. En Bash, los índices comienzan desde 0, por lo que 0 significa que estamos comenzando desde el primer carácter de la cadena.
+* El segundo número después del segundo : (en este caso, 1) indica la cantidad de caracteres que deseamos extraer. Aquí, 1 significa que solo queremos extraer un solo carácter.
+* digito1 contendrá el primer dígito del valor almacenado en la variable numero. Por ejemplo, si numero es "12345", entonces digito1 contendrá "1".
+* dosprimerosdigitos contendrá los dos primeros dígito del valor almacenado en la variable numero. Por ejemplo, si numero es "12345", entonces digito1 contendrá "12".
+* tresdigitos. Por ejemplo, si numero es "12345", entonces digito1 contendrá "234".
+
+
+
 ### Longitud del Array
 Podemos obtener la longitud de un array utilizando la expresión 
 
@@ -623,9 +657,8 @@ ${#nombre_array[@]}.
 ```bash
 echo "La longitud del array nombres es: ${#nombres[@]}"
 ```
-### Iteración a través de un Array
+## Iteración a través de un Array
 Podemos iterar a través de un array utilizando un bucle for.
-
 
 # Iterar a través del array nombres
 ```bash
